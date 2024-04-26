@@ -11,7 +11,7 @@ function generateRandomColor() {
     const g = Math.floor(Math.random() * 256);
     const b = Math.floor(Math.random() * 256);
     const color = `rgb(${r},${g},${b})`;
-    const name = `RGB(${r},${g},${b})`;
+    const name = `ZER0_PIXEL: RGB(${r},${g},${b})`;
     return {
         color: color,
         name: name,
