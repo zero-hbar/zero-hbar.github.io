@@ -14,3 +14,32 @@ body {
     text-align: center; /* Center align text */
     font-size: 33px; /* Adjust font size as needed */
 }
+
+#external-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* background-color: #f9f9f9; /* optional */
+  /* border-top: 1px solid #ddd; /* optional */
+}
+
+#external-links li {
+  margin: 0;
+  flex: 1;
+}
+
+#external-links a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+#external-links a:hover {
+  color: #23527c;
+}
