@@ -30,17 +30,3 @@ body {
     /* background-color: #f9f9f9; /* optional */
     /* border-top: 1px solid #ddd; /* optional */
   }
-
-#external-links li {
-  margin: 0;
-  flex: 1;
-}
-
-#external-links a {
-  color: #337ab7;
-  text-decoration: none;
-}
-
-#external-links a:hover {
-  color: #23527c;
-}
