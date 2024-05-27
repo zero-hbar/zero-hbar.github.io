@@ -47,7 +47,7 @@ function toggleMenu() {
 
 // Function to set a random favicon
 function setRandomFavicon() {
-    const favicons = ['favicon1.ico', 'favicon2.ico'];
+    const favicons = ['images/favicon1.ico.png', 'images/favicon2.ico.png'];
     const randomFavicon = favicons[Math.floor(Math.random() * favicons.length)];
     const faviconElement = document.getElementById('dynamic-favicon');
     faviconElement.href = randomFavicon;
