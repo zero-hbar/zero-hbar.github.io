@@ -38,8 +38,12 @@ function toggleMenu() {
 }
 
 // Add event listener to the navigation button
-const navButton = document.getElementById('nav-button');
-navButton.addEventListener('click', toggleMenu);
+document.addEventListener('DOMContentLoaded', () => {
+    const navButton = document.getElementById('nav-button');
+    if (navButton) {
+        navButton.addEventListener('click', toggleMenu);
+    }
+});
 
 // Initial call to start color cycling
 changeColor();
