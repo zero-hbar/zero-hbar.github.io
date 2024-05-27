@@ -5,8 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Ensure this is added */
-    overflow: hidden; /* Ensure no overflow causing white block */
+    position: relative;
 }
 
 #color-container {
@@ -25,10 +24,9 @@ body {
     width: 40px; /* Adjust width as needed */
     height: 40px; /* Adjust height as needed */
     cursor: pointer; /* Change cursor to pointer for better UX */
-    /* background-color: transparent; /* Remove the temporary background color */
+    background-color: transparent;
     z-index: 1000; /* Ensure the button is always on top */
 }
-
 
 /* Navigation Menu */
 #nav-menu {
@@ -36,7 +34,8 @@ body {
     top: 0;
     left: -250px; /* Start hidden off-screen */
     width: 250px;
-    height: 100%;
+    height: 33%; /* Adjust height to cover about 1/3 of the page */
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent shadow with 10% opacity */
     transition: left 0.3s ease; /* Smooth transition */
     padding-top: 60px; /* Space for the button */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
