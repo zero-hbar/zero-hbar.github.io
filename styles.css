@@ -37,7 +37,6 @@ body {
     left: -250px; /* Start hidden off-screen */
     width: 250px;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
     transition: left 0.3s ease; /* Smooth transition */
     padding-top: 60px; /* Space for the button */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
