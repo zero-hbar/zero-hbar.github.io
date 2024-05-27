@@ -31,5 +31,15 @@ function changeColor() {
     setTimeout(changeColor, interval);
 }
 
+// Function to toggle the navigation menu
+function toggleMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('active');
+}
+
+// Add event listener to the navigation button
+const navButton = document.getElementById('nav-button');
+navButton.addEventListener('click', toggleMenu);
+
 // Initial call to start color cycling
 changeColor();

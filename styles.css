@@ -5,7 +5,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Add this to position the nav button */
+    position: relative; /* Ensure this is added */
+    background-color: lightblue; /* Temporary background color for verification */
+    overflow: hidden; /* Ensure no overflow causing white block */
 }
 
 #color-container {
@@ -24,6 +26,7 @@ body {
     width: 40px; /* Adjust width as needed */
     height: 40px; /* Adjust height as needed */
     cursor: pointer; /* Change cursor to pointer for better UX */
+    background-color: red; /* Temporary background color for verification */
 }
 
 /* Navigation Menu */
