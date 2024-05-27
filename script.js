@@ -45,12 +45,23 @@ function toggleMenu() {
     navMenu.classList.toggle('active');
 }
 
+// Function to set a random favicon
+function setRandomFavicon() {
+    const favicons = ['favicon1.ico', 'favicon2.ico'];
+    const randomFavicon = favicons[Math.floor(Math.random() * favicons.length)];
+    const faviconElement = document.getElementById('dynamic-favicon');
+    faviconElement.href = randomFavicon;
+}
+
 // Add event listener to the navigation button
 document.addEventListener('DOMContentLoaded', () => {
     const navButton = document.getElementById('nav-button');
     if (navButton) {
         navButton.addEventListener('click', toggleMenu);
     }
+    
+    // Set a random favicon on page load
+    setRandomFavicon();
 });
 
 // Initial call to start color cycling
