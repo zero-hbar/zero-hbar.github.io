@@ -5,6 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* Add this to position the nav button */
 }
 
 #color-container {
@@ -13,4 +14,48 @@ body {
     transition: background-color 2s ease; /* Transition for smooth color change */
     text-align: center; /* Center align text */
     font-size: 33px; /* Adjust font size as needed */
+}
+
+/* Navigation Button */
+#nav-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+/* Navigation Menu */
+#nav-menu {
+    position: absolute;
+    top: 0;
+    left: -250px; /* Start hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    transition: left 0.3s ease; /* Smooth transition */
+    padding-top: 60px; /* Space for the button */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+#nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-menu ul li {
+    padding: 8px 16px;
+}
+
+#nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Menu Active Class */
+#nav-menu.active {
+    left: 0; /* Move menu into view */
 }
