@@ -22,11 +22,19 @@ function generateRandomColor() {
 // Function to set a new background color every 5-10 seconds
 function changeColor() {
     const colorContainer = document.getElementById('color-container');
+    const navMenu = document.getElementById('nav-menu');
     const newColor = generateRandomColor();
+    
     colorContainer.style.backgroundColor = newColor.color;
     colorContainer.textContent = newColor.name; // Display RGB name
+    
+    // Update menu background color based on luminance
+    navMenu.style.backgroundColor = newColor.color;
+    
     const textColor = newColor.luminance > 0.5 ? 'black' : 'white'; // Choose text color based on background luminance
     colorContainer.style.color = textColor;
+    navMenu.style.color = textColor; // Ensure menu text is visible
+    
     const interval = Math.floor(Math.random() * 6 + 5) * 1000; // Random interval between 5-10 seconds
     setTimeout(changeColor, interval);
 }
