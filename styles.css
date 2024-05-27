@@ -6,7 +6,6 @@ body {
     justify-content: center;
     align-items: center;
     position: relative; /* Ensure this is added */
-    background-color: lightblue; /* Temporary background color for verification */
     overflow: hidden; /* Ensure no overflow causing white block */
 }
 
@@ -26,8 +25,10 @@ body {
     width: 40px; /* Adjust width as needed */
     height: 40px; /* Adjust height as needed */
     cursor: pointer; /* Change cursor to pointer for better UX */
-    background-color: red; /* Temporary background color for verification */
+    /* background-color: transparent; /* Remove the temporary background color */
+    z-index: 1000; /* Ensure the button is always on top */
 }
+
 
 /* Navigation Menu */
 #nav-menu {
