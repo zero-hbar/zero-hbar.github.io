@@ -19,7 +19,7 @@ body {
 /* Navigation Button */
 #nav-button {
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
     left: 10px;
     width: 40px; /* Adjust width as needed */
     height: 40px; /* Adjust height as needed */
@@ -65,7 +65,7 @@ body {
 /* Hedera Button */
 #hedera-button {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 10px;
     width: 40px;  /* Adjust the size as needed */
     height: 40px; /* Adjust the size as needed */
@@ -73,3 +73,4 @@ body {
     background-color: transparent;
     z-index: 1000; /* Ensure the button is always on top */
 }
+
