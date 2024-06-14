@@ -1,10 +1,10 @@
 User-agent: *
 Disallow: /
 
-User-agent: AdsBot-Google
+User-agent: AdsBot Mobile Web
 Disallow: /
 
-User-agent: AdsBot-Google-Mobile
+User-agent: AdsBot
 Disallow: /
 
 User-agent: AdIdxBot
