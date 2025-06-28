@@ -1,4 +1,3 @@
-pages:
+build:
+  type: static
   source: .
-  branch: main
-  path: /
